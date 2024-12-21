@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>project của đức đưa</h2>
+
+<p>ảnh mèo</p>
+<button id="randombutton">mèo</button>
+<div>
+    <img id="randomImage" src="https://kynguyenlamdep.com/wp-content/uploads/2022/08/anh-cute-meo-con-nguy-hiem.jpg" alt="Random Image" />
+</div>
+<script>
+  const images = [
+            "https://th.bing.com/th/id/OIP.NtuxiQNrzWvAEaOzuPdJDgHaHa?rs=1&pid=ImgDetMain",
+            "https://c4.wallpaperflare.com/wallpaper/703/44/925/kitty-cat-cats-sleep-wallpaper-thumb.jpg",
+            "https://th.bing.com/th/id/OIP.xVQFM_OCiWkzGtrdxQA5awHaJ3?rs=1&pid=ImgDetMain",
+            "https://th.bing.com/th/id/OIP.xTVL2fwIuKR6f5vB6GldLwHaJ4?rs=1&pid=ImgDetMain",
+            "https://th.bing.com/th/id/OIP.Ilqo5KJs8q_x4beLfLoowwHaHa?rs=1&pid=ImgDetMain"
+        ];
+        const button = document.getElementById('randombutton');
+        const image = document.getElementById('randomImage');
+        button.addEventListener('click', function () {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            image.src = images[randomIndex];
+        });
+</script>
+</body>
+</html>
