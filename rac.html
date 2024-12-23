@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img {
+            cursor: pointer;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="audio1" autoplay src="C:\Users\kiet\Downloads\thick-of-it.mp3"></audio>
+    <audio id="audio2" autoplay src="C:\Users\kiet\Downloads\f1c1yrcu3b.mp3"></audio>
+    <script>
+        const audioList = [
+            document.getElementById('audio1'),
+            document.getElementById('audio2'),
+        ];
+        const audioButton = document.getElementById('audioButton');
+        const randomIndex = Math.floor(Math.random() * audioList.length);
+        const selectedAudio = audioList[randomIndex];
+        selectedAudio.play();
+    </script>
+    <img src="https://static.vecteezy.com/system/resources/previews/004/567/246/original/hand-drawn-trash-bin-icon-with-arrow-symbol-illustration-isolated-background-vector.jpg"
+        alt="Nút Ảnh" class="image-button" id="audioButton" onmouseover="hover()" onmouseout="normal()" />
+</body>
+
+</html>
